@@ -1,0 +1,105 @@
+2026-01-29T02:34:55.654900+00:00 [debug] clientid: mqttx_77869fb8, msg: cancel_stats_timer, peername: 172.17.0.1:60156, username: 123
+2026-01-29T02:35:25.655956+00:00 [debug] clientid: mqttx_77869fb8, msg: cancel_stats_timer, peername: 172.17.0.1:60156, username: 123
+2026-01-29T02:35:40.651425+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: raw_bin_received, peername: 172.17.0.1:60156, username: 123, size: 2, type: hex, bin: C000
+2026-01-29T02:35:40.651654+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_received, peername: 172.17.0.1:60156, username: 123, packet: PINGREQ(Q0, R0, D0), payload_encode: text
+2026-01-29T02:35:40.651863+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_sent, peername: 172.17.0.1:60156, username: 123, packet: PINGRESP(Q0, R0, D0), payload_encode: text
+2026-01-29T02:36:00.345150+00:00 [debug] tag: MQTT, msg: raw_bin_received, peername: 172.17.0.1:60558, size: 44, type: hex, bin: 102A00044D51545405C00050051100001C20000E6D717474785F383763366166623300033133320003333231
+2026-01-29T02:36:00.345352+00:00 [debug] tag: MQTT, msg: mqtt_packet_received, peername: 172.17.0.1:60558, packet: CONNECT(Q0, R0, D0, ClientId=mqttx_87c6afb3, ProtoName=MQTT, ProtoVsn=5, CleanStart=false, KeepAlive=80, Username=132, Password=******), payload_encode: text
+2026-01-29T02:36:00.345493+00:00 [debug] tag: MQTT, clientid: mqttx_87c6afb3, msg: mqtt_packet_received, peername: 172.17.0.1:60558, username: 132, packet: CONNECT(Q0, R0, D0, ClientId=mqttx_87c6afb3, ProtoName=MQTT, ProtoVsn=5, CleanStart=false, KeepAlive=80, Username=132, Password=******), payload_encode: text
+2026-01-29T02:36:00.345558+00:00 [debug] tag: MULTI_TENANCY, clientid: mqttx_87c6afb3, msg: no_tenant_namespace, peername: 172.17.0.1:60558, username: 132
+2026-01-29T02:36:00.345590+00:00 [debug] tag: AUTHN, clientid: mqttx_87c6afb3, msg: authentication_result, peername: 172.17.0.1:60558, username: 132, reason: no_chain, result: {ok,ok}
+2026-01-29T02:36:00.346035+00:00 [debug] clientid: mqttx_87c6afb3, msg: insert_channel_info, peername: 172.17.0.1:60558, username: 132
+2026-01-29T02:36:00.346181+00:00 [debug] tag: MQTT, clientid: mqttx_87c6afb3, msg: mqtt_packet_sent, peername: 172.17.0.1:60558, username: 132, packet: CONNACK(Q0, R0, D0, AckFlags=1, ReasonCode=0), payload_encode: text
+2026-01-29T02:36:00.346542+00:00 [debug] clientid: mqttx_87c6afb3, msg: emqx_channel_takeover_end, peername: 172.17.0.1:60482, username: 132
+2026-01-29T02:36:00.346646+00:00 [debug] tag: SOCKET, clientid: mqttx_87c6afb3, msg: emqx_connection_terminated, peername: 172.17.0.1:60482, username: 132, reason: {shutdown,takenover}
+2026-01-29T02:36:00.346699+00:00 [info] clientid: mqttx_87c6afb3, msg: terminate, peername: 172.17.0.1:60482, username: 132, reason: {shutdown,takenover}
+2026-01-29T02:36:02.892310+00:00 [debug] tag: MQTT, clientid: mqttx_87c6afb3, msg: raw_bin_received, peername: 172.17.0.1:60558, username: 132, size: 37, type: hex, bin: 34230009746573742F746573740E3E007B0A2020226D7367223A2022313233313233220A7D
+2026-01-29T02:36:02.892521+00:00 [debug] tag: MQTT, clientid: mqttx_87c6afb3, msg: mqtt_packet_received, peername: 172.17.0.1:60558, username: 132, packet: PUBLISH(Q2, R0, D0, Topic=test/test, PacketId=3646, Payload(text)={, "msg": "123123", }), payload_encode: text
+2026-01-29T02:36:02.892991+00:00 [debug] tag: AUTHZ, clientid: mqttx_87c6afb3, msg: authorization_module_ignore, peername: 172.17.0.1:60558, username: 132, topic: test/test, module: emqx_authz_client_info, action: PUBLISH(Q2,R0), authorize_type: client_info
+2026-01-29T02:36:02.893272+00:00 [debug] tag: AUTHZ, clientid: mqttx_87c6afb3, msg: authorization_matched_allow, peername: 172.17.0.1:60558, username: 132, topic: test/test, module: emqx_authz_file, action: PUBLISH(Q2,R0), authorize_type: file
+2026-01-29T02:36:02.893466+00:00 [debug] tag: AUTHZ, clientid: mqttx_87c6afb3, msg: authorization_permission_allowed, peername: 172.17.0.1:60558, username: 132, topic: test/test, source: file, action: PUBLISH(Q2,R0)
+2026-01-29T02:36:02.893657+00:00 [debug] tag: PUBLISH, clientid: mqttx_87c6afb3, msg: publish_to, peername: 172.17.0.1:60558, username: 132, topic: test/test, payload: {, "msg": "123123", }, payload_encode: text
+2026-01-29T02:36:02.893867+00:00 [debug] tag: MQTT, clientid: mqttx_87c6afb3, msg: mqtt_packet_sent, peername: 172.17.0.1:60558, username: 132, packet: PUBREC(Q0, R0, D0, PacketId=3646, ReasonCode=0), payload_encode: text
+2026-01-29T02:36:02.893922+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_sent, peername: 172.17.0.1:60156, username: 123, packet: PUBLISH(Q2, R0, D0, Topic=test/test, PacketId=3, Payload(text)={, "msg": "123123", }), payload_encode: text
+2026-01-29T02:36:02.895353+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: raw_bin_received, peername: 172.17.0.1:60156, username: 123, size: 5, type: hex, bin: 5003000300
+2026-01-29T02:36:02.895486+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_received, peername: 172.17.0.1:60156, username: 123, packet: PUBREC(Q0, R0, D0, PacketId=3, ReasonCode=0), payload_encode: text
+2026-01-29T02:36:02.895566+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_sent, peername: 172.17.0.1:60156, username: 123, packet: PUBREL(Q1, R0, D0, PacketId=3, ReasonCode=0), payload_encode: text
+2026-01-29T02:36:02.912770+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: raw_bin_received, peername: 172.17.0.1:60156, username: 123, size: 5, type: hex, bin: 7003000300
+2026-01-29T02:36:02.912995+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_received, peername: 172.17.0.1:60156, username: 123, packet: PUBCOMP(Q0, R0, D0, PacketId=3, ReasonCode=0), payload_encode: text
+2026-01-29T02:36:45.347903+00:00 [debug] clientid: mqttx_87c6afb3, msg: cancel_stats_timer, peername: 172.17.0.1:60558, username: 132
+2026-01-29T02:36:55.654900+00:00 [debug] clientid: mqttx_77869fb8, msg: cancel_stats_timer, peername: 172.17.0.1:60156, username: 123
+2026-01-29T02:37:02.909780+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: raw_bin_received, peername: 172.17.0.1:60156, username: 123, size: 2, type: hex, bin: C000
+2026-01-29T02:37:02.909931+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_received, peername: 172.17.0.1:60156, username: 123, packet: PINGREQ(Q0, R0, D0), payload_encode: text
+2026-01-29T02:37:02.910163+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_sent, peername: 172.17.0.1:60156, username: 123, packet: PINGRESP(Q0, R0, D0), payload_encode: text
+2026-01-29T02:37:15.348858+00:00 [debug] clientid: mqttx_87c6afb3, msg: cancel_stats_timer, peername: 172.17.0.1:60558, username: 132
+2026-01-29T02:37:17.910888+00:00 [debug] clientid: mqttx_77869fb8, msg: cancel_stats_timer, peername: 172.17.0.1:60156, username: 123
+2026-01-29T02:37:22.891701+00:00 [debug] tag: MQTT, clientid: mqttx_87c6afb3, msg: raw_bin_received, peername: 172.17.0.1:60558, username: 132, size: 2, type: hex, bin: C000
+2026-01-29T02:37:22.891947+00:00 [debug] tag: MQTT, clientid: mqttx_87c6afb3, msg: mqtt_packet_received, peername: 172.17.0.1:60558, username: 132, packet: PINGREQ(Q0, R0, D0), payload_encode: text
+2026-01-29T02:37:22.892330+00:00 [debug] tag: MQTT, clientid: mqttx_87c6afb3, msg: mqtt_packet_sent, peername: 172.17.0.1:60558, username: 132, packet: PINGRESP(Q0, R0, D0), payload_encode: text
+2026-01-29T02:37:22.893819+00:00 [notice] TLS server: In state connection received CLIENT ALERT: Fatal - Bad Record MAC
+2026-01-29T02:37:22.894026+00:00 [warning] clientid: mqttx_87c6afb3, msg: socket_error, peername: 172.17.0.1:60558, username: 132, reason: {tls_alert,{bad_record_mac,"TLS server: In state connection received CLIENT ALERT: Fatal - Bad Record MAC\n"}}
+2026-01-29T02:37:47.911870+00:00 [debug] clientid: mqttx_77869fb8, msg: cancel_stats_timer, peername: 172.17.0.1:60156, username: 123
+2026-01-29T02:38:02.909971+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: raw_bin_received, peername: 172.17.0.1:60156, username: 123, size: 2, type: hex, bin: C000
+2026-01-29T02:38:02.910146+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_received, peername: 172.17.0.1:60156, username: 123, packet: PINGREQ(Q0, R0, D0), payload_encode: text
+2026-01-29T02:38:02.910254+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_sent, peername: 172.17.0.1:60156, username: 123, packet: PINGRESP(Q0, R0, D0), payload_encode: text
+2026-01-29T02:38:02.910461+00:00 [debug] clientid: mqttx_77869fb8, msg: check_oom_ok, peername: 172.17.0.1:60156, username: 123, result: ok, incoming_bytes: 32, incoming_pubs: 10, policy: #{max_heap_size => 4194304,enable => true,max_mailbox_size => 1000}
+2026-01-29T02:38:07.893810+00:00 [debug] clientid: mqttx_87c6afb3, msg: cancel_stats_timer, peername: 172.17.0.1:60558, username: 132
+2026-01-29T02:38:17.910845+00:00 [debug] clientid: mqttx_77869fb8, msg: cancel_stats_timer, peername: 172.17.0.1:60156, username: 123
+2026-01-29T02:38:47.911852+00:00 [debug] clientid: mqttx_77869fb8, msg: cancel_stats_timer, peername: 172.17.0.1:60156, username: 123
+2026-01-29T02:39:00.905899+00:00 [debug] tag: SOCKET, msg: emqx_connection_terminated, peername: 172.17.0.1:60594, reason: {shutdown,idle_timeout}
+2026-01-29T02:39:00.906109+00:00 [info] msg: terminate, peername: 172.17.0.1:60594, reason: {shutdown,idle_timeout}
+2026-01-29T02:39:02.910182+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: raw_bin_received, peername: 172.17.0.1:60156, username: 123, size: 2, type: hex, bin: C000
+2026-01-29T02:39:02.910333+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_received, peername: 172.17.0.1:60156, username: 123, packet: PINGREQ(Q0, R0, D0), payload_encode: text
+2026-01-29T02:39:02.910489+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_sent, peername: 172.17.0.1:60156, username: 123, packet: PINGRESP(Q0, R0, D0), payload_encode: text
+2026-01-29T02:39:18.922148+00:00 [debug] tag: SOCKET, msg: emqx_connection_terminated, peername: 172.17.0.1:60610, reason: {shutdown,idle_timeout}
+2026-01-29T02:39:18.922556+00:00 [info] msg: terminate, peername: 172.17.0.1:60610, reason: {shutdown,idle_timeout}
+2026-01-29T02:39:36.939540+00:00 [debug] tag: SOCKET, msg: emqx_connection_terminated, peername: 172.17.0.1:60628, reason: {shutdown,idle_timeout}
+2026-01-29T02:39:36.939739+00:00 [info] msg: terminate, peername: 172.17.0.1:60628, reason: {shutdown,idle_timeout}
+2026-01-29T02:39:47.911883+00:00 [debug] clientid: mqttx_77869fb8, msg: cancel_stats_timer, peername: 172.17.0.1:60156, username: 123
+2026-01-29T02:39:54.957068+00:00 [debug] tag: SOCKET, msg: emqx_connection_terminated, peername: 172.17.0.1:60672, reason: {shutdown,idle_timeout}
+2026-01-29T02:39:54.957356+00:00 [info] msg: terminate, peername: 172.17.0.1:60672, reason: {shutdown,idle_timeout}
+2026-01-29T02:40:02.910481+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: raw_bin_received, peername: 172.17.0.1:60156, username: 123, size: 2, type: hex, bin: C000
+2026-01-29T02:40:02.910694+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_received, peername: 172.17.0.1:60156, username: 123, packet: PINGREQ(Q0, R0, D0), payload_encode: text
+2026-01-29T02:40:02.910849+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_sent, peername: 172.17.0.1:60156, username: 123, packet: PINGRESP(Q0, R0, D0), payload_encode: text
+2026-01-29T02:40:12.973789+00:00 [debug] tag: SOCKET, msg: emqx_connection_terminated, peername: 172.17.0.1:60690, reason: {shutdown,idle_timeout}
+2026-01-29T02:40:12.973935+00:00 [info] msg: terminate, peername: 172.17.0.1:60690, reason: {shutdown,idle_timeout}
+2026-01-29T02:40:30.993415+00:00 [debug] tag: SOCKET, msg: emqx_connection_terminated, peername: 172.17.0.1:60708, reason: {shutdown,idle_timeout}
+2026-01-29T02:40:30.993592+00:00 [info] msg: terminate, peername: 172.17.0.1:60708, reason: {shutdown,idle_timeout}
+2026-01-29T02:40:47.912857+00:00 [debug] clientid: mqttx_77869fb8, msg: cancel_stats_timer, peername: 172.17.0.1:60156, username: 123
+2026-01-29T02:40:49.005378+00:00 [debug] tag: SOCKET, msg: emqx_connection_terminated, peername: 172.17.0.1:60730, reason: {shutdown,idle_timeout}
+2026-01-29T02:40:49.005875+00:00 [info] msg: terminate, peername: 172.17.0.1:60730, reason: {shutdown,idle_timeout}
+2026-01-29T02:41:02.910777+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: raw_bin_received, peername: 172.17.0.1:60156, username: 123, size: 2, type: hex, bin: C000
+2026-01-29T02:41:02.911006+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_received, peername: 172.17.0.1:60156, username: 123, packet: PINGREQ(Q0, R0, D0), payload_encode: text
+2026-01-29T02:41:02.911137+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_sent, peername: 172.17.0.1:60156, username: 123, packet: PINGRESP(Q0, R0, D0), payload_encode: text
+2026-01-29T02:41:07.023604+00:00 [debug] tag: SOCKET, msg: emqx_connection_terminated, peername: 172.17.0.1:60746, reason: {shutdown,idle_timeout}
+2026-01-29T02:41:07.023797+00:00 [info] msg: terminate, peername: 172.17.0.1:60746, reason: {shutdown,idle_timeout}
+2026-01-29T02:41:17.895886+00:00 [debug] clientid: mqttx_87c6afb3, msg: cancel_stats_timer, peername: 172.17.0.1:60558, username: 132
+2026-01-29T02:41:17.912051+00:00 [debug] clientid: mqttx_77869fb8, msg: cancel_stats_timer, peername: 172.17.0.1:60156, username: 123
+2026-01-29T02:41:25.039953+00:00 [debug] tag: SOCKET, msg: emqx_connection_terminated, peername: 172.17.0.1:60764, reason: {shutdown,idle_timeout}
+2026-01-29T02:41:25.040115+00:00 [info] msg: terminate, peername: 172.17.0.1:60764, reason: {shutdown,idle_timeout}
+2026-01-29T02:41:28.054136+00:00 [debug] tag: MQTT, msg: raw_bin_received, peername: 172.17.0.1:60782, size: 49, type: hex, bin: 102F00044D51545405C000500A1100001C202700100000000E6D717474785F383763366166623300033133320003333231
+2026-01-29T02:41:28.054294+00:00 [debug] tag: MQTT, msg: mqtt_packet_received, peername: 172.17.0.1:60782, packet: CONNECT(Q0, R0, D0, ClientId=mqttx_87c6afb3, ProtoName=MQTT, ProtoVsn=5, CleanStart=false, KeepAlive=80, Username=132, Password=******), payload_encode: text
+2026-01-29T02:41:28.054502+00:00 [debug] tag: MQTT, clientid: mqttx_87c6afb3, msg: mqtt_packet_received, peername: 172.17.0.1:60782, username: 132, packet: CONNECT(Q0, R0, D0, ClientId=mqttx_87c6afb3, ProtoName=MQTT, ProtoVsn=5, CleanStart=false, KeepAlive=80, Username=132, Password=******), payload_encode: text
+2026-01-29T02:41:28.054618+00:00 [debug] tag: MULTI_TENANCY, clientid: mqttx_87c6afb3, msg: no_tenant_namespace, peername: 172.17.0.1:60782, username: 132
+2026-01-29T02:41:28.054718+00:00 [debug] tag: AUTHN, clientid: mqttx_87c6afb3, msg: authentication_result, peername: 172.17.0.1:60782, username: 132, reason: no_chain, result: {ok,ok}
+2026-01-29T02:41:28.055476+00:00 [debug] clientid: mqttx_87c6afb3, msg: insert_channel_info, peername: 172.17.0.1:60782, username: 132
+2026-01-29T02:41:28.055597+00:00 [debug] tag: MQTT, clientid: mqttx_87c6afb3, msg: mqtt_packet_sent, peername: 172.17.0.1:60782, username: 132, packet: CONNACK(Q0, R0, D0, AckFlags=1, ReasonCode=0), payload_encode: text
+2026-01-29T02:41:28.055873+00:00 [debug] clientid: mqttx_87c6afb3, msg: emqx_channel_takeover_end, peername: 172.17.0.1:60558, username: 132
+2026-01-29T02:41:28.055957+00:00 [debug] tag: SOCKET, clientid: mqttx_87c6afb3, msg: emqx_connection_terminated, peername: 172.17.0.1:60558, username: 132, reason: {shutdown,takenover}
+2026-01-29T02:41:28.056060+00:00 [info] clientid: mqttx_87c6afb3, msg: terminate, peername: 172.17.0.1:60558, username: 132, reason: {shutdown,takenover}
+2026-01-29T02:41:28.058226+00:00 [debug] tag: MQTT, clientid: mqttx_87c6afb3, msg: raw_bin_received, peername: 172.17.0.1:60782, username: 132, size: 37, type: hex, bin: 34230009746573742F746573740E3E007B0A2020226D7367223A2022313233313233220A7D
+2026-01-29T02:41:28.058669+00:00 [debug] tag: MQTT, clientid: mqttx_87c6afb3, msg: mqtt_packet_received, peername: 172.17.0.1:60782, username: 132, packet: PUBLISH(Q2, R0, D0, Topic=test/test, PacketId=3646, Payload(text)={, "msg": "123123", }), payload_encode: text
+2026-01-29T02:41:28.059225+00:00 [debug] tag: AUTHZ, clientid: mqttx_87c6afb3, msg: authorization_module_ignore, peername: 172.17.0.1:60782, username: 132, topic: test/test, module: emqx_authz_client_info, action: PUBLISH(Q2,R0), authorize_type: client_info
+2026-01-29T02:41:28.059360+00:00 [debug] tag: AUTHZ, clientid: mqttx_87c6afb3, msg: authorization_matched_allow, peername: 172.17.0.1:60782, username: 132, topic: test/test, module: emqx_authz_file, action: PUBLISH(Q2,R0), authorize_type: file
+2026-01-29T02:41:28.059414+00:00 [debug] tag: AUTHZ, clientid: mqttx_87c6afb3, msg: authorization_permission_allowed, peername: 172.17.0.1:60782, username: 132, topic: test/test, source: file, action: PUBLISH(Q2,R0)
+2026-01-29T02:41:28.059478+00:00 [debug] tag: PUBLISH, clientid: mqttx_87c6afb3, msg: publish_to, peername: 172.17.0.1:60782, username: 132, topic: test/test, payload: {, "msg": "123123", }, payload_encode: text
+2026-01-29T02:41:28.059586+00:00 [debug] tag: MQTT, clientid: mqttx_87c6afb3, msg: mqtt_packet_sent, peername: 172.17.0.1:60782, username: 132, packet: PUBREC(Q0, R0, D0, PacketId=3646, ReasonCode=0), payload_encode: text
+2026-01-29T02:41:28.059642+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_sent, peername: 172.17.0.1:60156, username: 123, packet: PUBLISH(Q2, R0, D0, Topic=test/test, PacketId=4, Payload(text)={, "msg": "123123", }), payload_encode: text
+2026-01-29T02:41:28.061932+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: raw_bin_received, peername: 172.17.0.1:60156, username: 123, size: 5, type: hex, bin: 5003000400
+2026-01-29T02:41:28.062063+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_received, peername: 172.17.0.1:60156, username: 123, packet: PUBREC(Q0, R0, D0, PacketId=4, ReasonCode=0), payload_encode: text
+2026-01-29T02:41:28.062205+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_sent, peername: 172.17.0.1:60156, username: 123, packet: PUBREL(Q1, R0, D0, PacketId=4, ReasonCode=0), payload_encode: text
+2026-01-29T02:41:28.065492+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: raw_bin_received, peername: 172.17.0.1:60156, username: 123, size: 5, type: hex, bin: 7003000400
+2026-01-29T02:41:28.065728+00:00 [debug] tag: MQTT, clientid: mqttx_77869fb8, msg: mqtt_packet_received, peername: 172.17.0.1:60156, username: 123, packet: PUBCOMP(Q0, R0, D0, PacketId=4, ReasonCode=0), payload_encode: text
+2026-01-29T02:41:28.076953+00:00 [debug] tag: MQTT, clientid: mqttx_87c6afb3, msg: raw_bin_received, peername: 172.17.0.1:60782, username: 132, size: 5, type: hex, bin: 62030E3E00
+2026-01-29T02:41:28.077177+00:00 [debug] tag: MQTT, clientid: mqttx_87c6afb3, msg: mqtt_packet_received, peername: 172.17.0.1:60782, username: 132, packet: PUBREL(Q1, R0, D0, PacketId=3646, ReasonCode=0), payload_encode: text
+2026-01-29T02:41:28.077393+00:00 [debug] tag: MQTT, clientid: mqttx_87c6afb3, msg: mqtt_packet_sent, peername: 172.17.0.1:60782, username: 132, packet: PUBCOMP(Q0, R0, D0, PacketId=3646, ReasonCode=0), payload_encode: text

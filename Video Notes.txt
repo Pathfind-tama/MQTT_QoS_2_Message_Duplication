@@ -1,0 +1,8 @@
+Timestamp   Event
+[0:00:28]   Launch a proxy between Publisher and Broker that performs selective packet dropping without decrypting TLS
+
+[0:00:38]   Publisher sends the first QoS 2 message; Subscriber receives the 1st PUBLISH payload ("123123")
+
+[...]       Publisher retries; proxy selectively drops packets (for approximately 300 seconds)
+
+[0:06:04]   Publisher successfully reconnects and resends the QoS 2 message; Subscriber receives the 2nd PUBLISH payload ("123123")
