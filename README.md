@@ -56,7 +56,7 @@ This directory contains all materials required for independent reproduction:
 |------|-------------|
 | `Attack Demonstration Video.mp4` | Full screen recording of the attack, including client behavior, proxy actions, and real-time Wireshark capture |
 | `emqx.log` | Complete EMQX broker logs during the attack window (from video start to end) |
-| `mqtt_tls_proxy_two_stage_block_timed.py` | Transparent proxy script implementing the two-stage, time-based packet-dropping logic |
+| `poc.py` | Transparent proxy script implementing the two-stage, time-based packet-dropping logic |
 | `mqttx_test.pcapng` | Full Wireshark packet capture of the attack, including TLS and MQTT layers |
 | `Video Notes.txt` | Text explanation of key timestamps, actions, and observed behaviors in the video |
 | `emqx-enterprise-docker-sf-amd64.tar.gz` | Official EMQX Enterprise Docker image used as the vulnerable broker |
